@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
 
-    <title>My page title</title>
+    <title>Sign Up</title>
     
   </head>
 
@@ -18,12 +18,12 @@
 
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Groups</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Sign In</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="groups.html">Groups</a></li>
+          <li><a href="sign-in.html">Sign In</a></li>
         </ul>
+      </nav>
   
         <!-- A Search form is another common non-linear way to navigate through a website. -->
   
@@ -34,15 +34,17 @@
       </nav>
     </header>
     <br><br>
-    <label for="firstname">Full name:</label>
-    <input type="text" name="firstname" placeholder="John Snow"><br><br>
-    <label for="email">email:</label>
-    <input type="text"  name="email" placeholder=" name@gmail.com"><br><br>
-    <label for="password">password</label>
-    <input type="password" name="password" placeholder="ABC123!@#"><br><br>
-    <label for="confirmpassword"> Confirm password</label>
-    <input type="password" name="confirmpassword" placeholder="ABC123!@#"><br><br>
-    <input type="button" value="Submit">
+    <form>
+      <label for="firstname">Full name:</label>
+      <input type="text" name="firstname" placeholder="John Snow" required><br><br>
+      <label for="email">email:</label>
+      <input type="text"  name="email" placeholder=" name@gmail.com"  required><br><br>
+      <label for="password">password</label>
+      <input type="password" name="password" placeholder="ABC123!@#"  required><br><br>
+      <label for="confirmpassword"> Confirm password</label>
+      <input type="password" name="confirmpassword" placeholder="ABC123!@#"  required><br><br>
+      
+      <button type="submit" enable>Submit</button> </form>
 
 </body>
 </html>
