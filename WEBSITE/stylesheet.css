@@ -1,3 +1,5 @@
+/* navigation*/
+
 *{
     margin: 0;
     padding: 0;
@@ -5,13 +7,13 @@
     box-sizing: border-box;
 }
 body{
-    background: #070707;
+    background: #36454F;
     color: #fff;
 }
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(background.jpg);
+    background-image: url(campaign-creators-gMsnXqILjp4-unsplash.jpg);
     background-size: contain;
     background-position: center;
 }
@@ -63,4 +65,91 @@ nav ul li a:hover::after{
     font-size: 60px;
     margin-top: 20px;
     color: white;
+}
+
+/* background of home page*/
+
+.centered-text {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+}
+
+.column {
+    float:left;
+    width:33.33%;
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .nav-column {
+    float:left;
+    width:33.33%;
+}
+
+.left, .right {
+    width:25%;
+    padding:20px;
+}
+
+.middle {
+    width:50%;
+}
+/*-------about-------*/
+#about{
+    padding: 80px 0;
+    color: #fff;
+}
+.row1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 #ffffff;
+    transition: 0.3s;
+    margin: 10px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 blue;
+  }
+  
+  .box {
+    padding: 2px 16px;
+  }
+
+  .event-column {
+    width:33.33%;
+    float:left;
+}
+
+.grid {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+}
+
+.background-header {
+    width: 100%;
+    height: 80%;
+    background-image: url(logo.jpg);
+    background-position: center;
 }

@@ -13,10 +13,13 @@
     <!-- Here is our main header that is used across all the pages of our website -->
 
     <header>
+      <div class="header">
+      <div class="row">
+      <div class="nav-column logo-header left">
       <img src="cropped_logo.jfif" width="50" height = "50" style="float: left;">
-      <h1>CapaKonnect</h1>
-      <div id="header-text">
-<div class="container">
+      <h1 id="header-text">CapaKonnect</h1>
+      </div>
+      <div class="nav-column container middle">
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -25,64 +28,78 @@
           <li><a href="sign-in.html">Sign In</a></li>
         </ul>
       </nav>
-    </div>
+      </div>
 
-      <!-- A Search form is another common non-linear way to navigate through a website. -->
-  
+      <div class="searchbar nav-column right">
       <form>
-        <input type="search" name="q" placeholder="Search interests" />
-        <input type="submit" value="Go!" />
+        <input type="search" name="searchbar" placeholder="Search interests" />
+        <input type="submit" value="Search events" />
       </form>
-  </div>
-        
+      </div>
+      </div>
+    </div>
       
     </header><br>
+
+    
+    <br><br><br><br>
+    <!----about---->
+    <div id="about">
+            <div class="container">
+                <div class="row1">
+                    <div class="about-col-1">
     <img src="logo.jpg" width="400" style="float:left">
+  </div>
+  <div class="about-col-2">
+      <h1 class="sub-title"></h1>
     <h2>Where knowledge meets collaboration</h2>
     <P>CAPA KONNECT is a new cutting edge platform that serves as the digital hub for all things tech-related <br>
       fostering a space where knowledge meets collaboration. <br>
       We are passionate about empowering the tech community to thrive through knowledge exchange,<br>
       collaboration and networking.<br>
-      That is why we have created a vibrant community where Tech Enthusiasts,<br> 
+      That is why we have created a vibrant community where Tech Enthusiasts,<br>
       Innovators and Industry Professionals
-      come together to share, learn and KONNECT.</p>
-
-      <h3><b>Stay on the loop!</b></h3>
-
+      come together to share, learn and KONNECT.</p><br>
+       <h3><b>Stay on the loop!</b></h3>
+    </div>
+ 
+     
+ 
       <div>
-      <br>
-      <br>
-        <h2>Upcoming events</h2>
-        <table width="100%">
-          <tr>
-          <td width="33.3%">
-            <a href="https://www.testingmind.com/event/tas2024/test-automation-summit-johannesburg/">
-            <img src="Test Automation.png" height = "100">
-            </a>
-          
-            <p>Test Automation Summit in Cape Town <br> is a technology summit happening on April 11,<br> 2024 at Salt River, Cape Town.</p>
 
-            
-          </td>
-          <td width="33.3%">
+      <br>
+      <br>
+      
+        <h2>Upcoming events</h2>
+      <div class="grid">
+        <div class="card"> 
+            <a href="https://www.testingmind.com/event/tas2024/test-automation-summit-johannesburg/">
+            <img src="Test Automation.png" style="width:100%">
+            </a>
+           <div class="box"> 
+            <p>Test Automation Summit in Cape Town <br> is a technology summit happening on April 11,<br> 2024 at Salt River, Cape Town.</p>
+          </div>
+        </div>
+        <div class="card">
             <a href="https://techspocapetown.co.za/">
-              <img src="Techspo.jpg"  height = "100">
+              <img src="Techspo.jpg"  style="width:100%">
             </a>
-        
-          
+            <div class="box"> 
             <p>TECHSPO Cape Town is a two-day <br> technology expo returning October 16 – 17,<br> 2024 to the V&A Waterfront Cape Town <br> Conference Venue. </p>
-          </td>
-          <td width="33.3%">
+          </div>
+          </div>
+        <div class="card">
             <a href="https://allevents.in/cape%20town/count-her-in-invest-in-women-to-accelerate-tech-progress/10000823378225437">
-            <img src="aws.women.jpg"  height = "80">
+            <img src="aws.women.jpg"  style="width:100%">
             </a>
-              
-         
+          <div class="box">
           <p>Count Her In at the AWS Skills Centre, <br>Cape Town accelerator program happening on <br>March 8, 2024.</p>
-          </tr>
-          
-        </table>
+          </div>
+        </div>
       </div>
+      </div>
+    </div>
+
 </body>
 <br>
 <footer>
