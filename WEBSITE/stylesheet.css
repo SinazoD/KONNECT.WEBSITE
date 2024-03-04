@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 body{
-    background: #36454F;
+    background: #031825;
     color: #fff;
 }
 #header{
@@ -28,7 +28,7 @@ nav{
     flex-wrap: wrap;
 }
 .logo{
-    width: 140px;
+    width: 500px !important;
 }
 nav ul li{
     display: inline-block;
@@ -45,7 +45,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #5199eb;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -54,6 +54,10 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
     justify-content: space-between;
+}
+.about { 
+    background-image: url("abstractedit1.jpg");
+    background-size: cover;
 }
 .header-text{
     margin-top: 20%;
@@ -153,3 +157,10 @@ footer p {
     background-image: url(logo.jpg);
     background-position: center;
 }
+
+.form-text{
+    padding:7px 0;
+}
+
+.w3-animate-right
+{position:relative;animation:animateright 0.8s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
