@@ -237,3 +237,24 @@ nav ul li a:hover::after{
     bottom: 0;
     z-index: 100; /* Optional: Adjust the stacking order if needed */
 }
+
+#about-us { 
+    background-image: url("aboutbg.png");
+    background-size: cover;
+    color: #031825;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+.about-image {
+    border-radius: 100%;
+}
+
+.about-card {
+
+    transition: 0.3s;
+    margin: 10px;
+  }
+  
