@@ -179,6 +179,11 @@ nav ul li a:hover::after{
     opacity: 0;
     transition: opacity 0.3s;
   }
+  .overlay a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+  }
   
   .image-container:hover .overlay {
     opacity: 1;
