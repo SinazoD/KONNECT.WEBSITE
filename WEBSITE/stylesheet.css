@@ -77,10 +77,6 @@ nav ul li a:hover::after{
     text-align: center;
 }
 
-footer p {
-    text-align: center;
-}
-
 .column {
     float:left;
     width:33.33%;
@@ -188,3 +184,56 @@ footer p {
     opacity: 1;
   }
   
+  .d-flex > * {
+    margin-right: 50px; /* Adjust the margin value as needed */
+  }
+  
+  .form {
+    max-width: 300px; /* Decrease the max-width to your desired value */
+    width: 100%;
+    margin-right: auto;
+  }
+  
+  .form-input {
+    display: flex;
+    align-items: center;
+    height: 36px;
+    padding: 0px;
+  }
+  
+  .form-input input {
+    flex-grow: 1;
+    padding: 0 16px;
+    height: 100%;
+    border: 1px;
+    background-color: #fff;
+    border-radius: 36px 0 0 36px;
+    outline: none;
+    width: 100%;
+    color: var(--dark);
+  }
+  
+  .form-input button {
+    width: 36px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--blue);
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 0 50px 50px 0;
+    cursor: pointer;
+  }
+  footer {
+    background-color:#031825;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: fixed; /* Stick the footer to the bottom */
+    bottom: 0;
+    z-index: 100; /* Optional: Adjust the stacking order if needed */
+}
