@@ -272,3 +272,7 @@ nav ul li a:hover::after{
     opacity: 0;
     transition: opacity 0.3s;
 }
+.events { 
+    background-image: url("bc1.png");
+    background-size: cover;
+}
