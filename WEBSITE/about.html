@@ -3,98 +3,201 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <link href="stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>About Us</title>
     
   </head>
-  
-    <!-- Here is our main header that is used across all the pages of our website -->
-
-    <header>
-    <img src="cropped_logo.jfif" width="50" height = "50" style="float: left;">
-      <h1>CapaKonnect</h1>
-
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="groups.html">Groups</a></li>
-          <li><a href="sign-in.html">Sign In</a></li>
-        </ul>
-      </nav>
-        <!-- A Search form is another common non-linear way to navigate through a website. -->
-      
-        <form>
-          <input type="search" name="q" placeholder="Search interests" />
-          <input type="submit" value="Go!" />
-        </form>
-      </nav>
-       <!-- Here is our main header that is used across all the pages of our website -->
-
-    </header>
     <body>
-    <hr>
-        <h2>About Us</h2>
+      <header class="header-class">
+        <div class="header">
+        <div class="row">
+        <div class="nav-column logo-header left">
+        <img src="klogo.jpg" width="100" height = "100" style="float: left;"> <br><br>
+        <h1 id="header-text">CapaKonnect</h1>
+        </div><br><br><br><br>
+        <div class="nav-column container middle">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="groups.html">Groups</a></li>
+            <li><a href="sign-in.html">Sign In</a></li>
+          </ul>
+        </nav>
+        </div>
+  
+        <div class="d-flex justify-content-center ">
+          <form action="#">
+            <div class="form-input">
+              <input type="search" placeholder="Search...">
+              <button type="submit" class="search-btn"><i class='fa fa-search' ></i></button>
+            </div>
+          </form>   
+        </div>
+        </div>
+      </div>
+    </header>
+
+      <div id="about-us">
+        <h2>About Us</h2> <br>
         <p>At CAPA KONNECT, we are a diverse group of young minds from various backgrounds who <br>
           share a strong passion for technology. We value the lively and friendly community we have <br>
           created that empowers other young people and enables Tech enthusiasts a platform to connect<br> 
           without the need to feel out of place.We give you a chance to share your passion for innovation with others. 
-        </p>
+        </p> <br>
 
-        <h3>Our Mission</h3>
+        <h3>Our Mission</h3><br>
         <p>Empowering the tech community to thrive through knowledge exchange, collaboration, and networking.<br>
           Join a wider community of tech enthusiasts, developers, engineers, and industry pioneers.<br>
           Connect with like-minded individuals who share your passion for innovation or similar interest.
 
         </p>
-          
-          <hr>
+      
+          <br>
           <h2>Meet Our Team</h2>
-  
-          <div>
-            <table width="100%">
-              <tr>
-              <td width="50%">
-                <img src="Sinazo.jfif" height = "100">
-                
-                <h3>Sinazo Dlulisa</h3>
-                <p>CEO</p>
-
-                
-              </td>
-              <td width="50%">
-                <img src="Philani.jfif" height = "100">
-            
-                <h3>Philani Ngcobo</h3>
-                <p>CFO</p></td>
-              </tr>
-              
-              <tr>
-                <td width="33.3%">
-                  <img src="Delisha.jfif"  height = "100">
-                    
-                <h3>Delisha-Ann Naicker</h3>
-                <p>Customer Experience</p>
-
-                </td>
-                <td width="33.3%">
-                  <img src="Elo.jfif"  height = "100">
-                        
-                <h3>Elo Nyati</h3>
-                <p>Developer</p>
-                </td>
-                <td width="33.3%">  
-                  <img src="Simbulele.jfif" height = "100">
-                        
-                <h3>Simbulele Tauzeni</h3>
-                <p>Project Manager</p>
-                </td>
-              
-              </tr>
-            </table>
+          <br><br>
+          <div class="grid">
+            <div class="flip-card abt-image-container"> 
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img class="about-image" src="Anita.png" style="width:100%">
+                </div>
+                <div class="flip-card-back vertical-center"> 
+                  <h1>Sinazo Dlulisa</h1> <br>
+                  <h2>Chief Executive Officer and Founder</h2>
+                </div> 
+              </div>
           </div>
+
+                
+          <div class="flip-card abt-image-container"> 
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img class="about-image" src="Philani.png" style="width:100%">
+              </div>
+              <div class="flip-card-back vertical-center"> 
+                <h1>Philani Ngcobo</h1> <br>
+                <h2>Chief Finacial Officer</h2>
+              </div> 
+            </div>
+          </div>
+
+          <div class="about-card image-container"> 
+                
+            <img class="about-image" src="blank.png" style="width:100%">
+           
+        </div>
+              
+          <div class="flip-card abt-image-container"> 
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img class="about-image" src="Delisha.png" style="width:100%">
+              </div>
+              <div class="flip-card-back vertical-center"> 
+                <h1>Delisha-Ann Naicker</h1> <br>
+                <h2>Events Co-ordinator</h2>
+              </div> 
+            </div>
+          </div>
+        
+          <div class="flip-card abt-image-container"> 
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img class="about-image" src="Elo.png" style="width:100%">
+              </div>
+              <div class="flip-card-back vertical-center"> 
+                <h1>Elo Nyati</h1> <br>
+                <h2>Lead Web Developer</h2>
+              </div> 
+            </div>
+          </div>
+
+          <div class="flip-card abt-image-container"> 
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img class="about-image" src="Simbulele.png" style="width:100%">
+              </div>
+              <div class="flip-card-back vertical-center"> 
+                <h1>Simbulele Tauzeni</h1> <br>
+                <h2>Project Manager</h2>
+              </div> 
+            </div>
+          </div>
+      
+      
+          </div>
+
+          <!-- <div class="grid">
+           
+            <div class="flip-card abt-image-container"> 
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img class="about-image" src="Anita.png" style="width:100%">
+                  </div>
+                  <div class="flip-card-back vertical-center"> 
+                    <h1>Sinazo Dlulisa</h1> <br>
+                    <h2>Chief Executive Officer and Founder</h2>
+                  </div> 
+                </div>
+            </div>
+    
+            <div class="flip-card abt-image-container"> 
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img class="about-image" src="Philani.png" style="width:100%">
+                </div>
+                <div class="flip-card-back vertical-center"> 
+                  <h1>Philani Ngcobo</h1> <br>
+                  <h2>Chief Finacial Officer</h2>
+                </div> 
+              </div>
+            </div>
+          
+          
+          
+          <div class="flip-card abt-image-container"> 
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img class="about-image" src="Delisha.png" style="width:100%">
+              </div>
+              <div class="flip-card-back vertical-center"> 
+                <h1>Delisha-Ann Naicker</h1> <br>
+                <h2>Events Co-ordinator</h2>
+              </div> 
+            </div>
+          </div>
+        
+
+       
+        <div class="flip-card abt-image-container"> 
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img class="about-image" src="Elo.png" style="width:100%">
+            </div>
+            <div class="flip-card-back vertical-center"> 
+              <h1>Elo Nyati</h1> <br>
+              <h2>Lead Web Developer</h2>
+            </div> 
+          </div>
+        </div>
+      <div class="flip-card abt-image-container"> 
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class="about-image" src="Simbulele.png" style="width:100%">
+          </div>
+          <div class="flip-card-back vertical-center"> 
+            <h1>Simbulele Tauzeni</h1> <br>
+            <h2>Project Manager and Co-ordinator</h2>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
         </body>
-        <hr>
+      
           <footer>
             
             <p>© 2024 CAPA KONNECT. All Rights Reserved.</p>
