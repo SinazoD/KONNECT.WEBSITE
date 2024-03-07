@@ -307,3 +307,39 @@ nav ul li a:hover::after{
     padding-top: 40%;
     padding-bottom: 40%;
 }
+
+.egrid {
+  display: grid;
+  gap: 6em;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 1fr;
+}
+.ecards {
+  box-shadow: 0 4px 8px 0 #ffffff;
+  transition: 0.3s;
+  margin: 10px;
+  background-color: #00a2d4;
+}
+
+
+.image-container:hover .eoverlay {
+  opacity: 1;
+}
+
+.eoverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2, 2, 2, 0.5); /* Adjust opacity as needed */
+  color: #ffffff;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.events { 
+  background-image: url("bc1.png");
+  background-size: cover;
+}
