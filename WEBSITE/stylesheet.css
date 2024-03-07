@@ -338,8 +338,72 @@ nav ul li a:hover::after{
   opacity: 0;
   transition: opacity 0.3s;
 }
-
 .events { 
   background-image: url("bc1.png");
   background-size: cover;
+}
+
+#sign {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Adjust as needed */
+    text-align: center;
+    background-color:white;
+    margin-top: 10px;
+    color: #0074d9;
+  }
+
+  /* Optional: Style the input fields and buttons */
+  input[type="text"],
+  input[type="password"],
+  input[type="button"] {
+    width: 20%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  input[type="button"] {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    border: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+  }
+  .single-line {
+            white-space: nowrap;
+  }/*
+  input:required {
+    border-style: solid;
+    border-color: red;
+  }*/
+  input[type="text"],
+input[type="password"] {
+    width: 20%; /* Full width */
+    padding: 10px 0; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 5px; /* Rounded borders */
+}
+
+/* Style the submit button */
+button[type="submit"] {
+    background-color: blue; /* Blue background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* Remove the default blue outline when input fields are focused */
+input:focus {
+    outline: none;
 }
