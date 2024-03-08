@@ -407,3 +407,16 @@ button[type="submit"] {
 input:focus {
     outline: none;
 }
+
+.Ggrid {
+  display: grid;
+  gap: 4em;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Groups { 
+  background-image: url("6.png");
+  background-size: cover;
+  padding-bottom: 100px;
+}
+
