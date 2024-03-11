@@ -418,5 +418,6 @@ input:focus {
   background-image: url("6.png");
   background-size: cover;
   padding-bottom: 100px;
+  color: #080808;
 }
 
