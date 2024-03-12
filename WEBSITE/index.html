@@ -4,7 +4,8 @@
   <head>
     
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="stylesheet.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -36,8 +37,8 @@
       <div class="d-flex justify-content-center ">
         <form action="#">
           <div class="form-input">
-            <input type="search" placeholder="Search...">
-            <button type="submit" class="search-btn"><i class='fa fa-search' ></i></button>
+            <input type="search" id="searchInput" placeholder="Search...">
+            <button onclick="performSearch()" class="search-btn"><i class='fa fa-search'></i></button>
           </div>
         </form>   
       </div>
@@ -112,6 +113,15 @@
                 
       <p>© 2024 CAPA KONNECT. All Rights Reserved.</p>
     </footer>
+    <script>
+      function performSearch() {
+          const searchInput = document.getElementById("searchInput");
+          const searchTerm = searchInput.value;
+          // You can use the searchTerm to perform your search logic (e.g., fetch data from an API, filter results, etc.)
+          console.log("Search term:", searchTerm);
+      }
+  </script>
+   
 </body>
 
 </html>

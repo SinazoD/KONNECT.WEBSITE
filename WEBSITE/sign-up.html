@@ -33,8 +33,8 @@
       <div class="d-flex justify-content-center ">
         <form action="#">
           <div class="form-input">
-            <input type="search" placeholder="Search...">
-            <button type="submit" class="search-btn"><i class='fa fa-search' ></i></button>
+            <input type="search" id="searchInput" placeholder="Search...">
+            <button onclick="performSearch()" class="search-btn"><i class='fa fa-search'></i></button>
           </div>
         </form>   
       </div>
@@ -53,8 +53,62 @@
       <input type="password" name="password" placeholder="ABC123!@#"  required><br><br>
       <label for="confirmpassword"> Confirm password</label>
       <input type="password" name="confirmpassword" placeholder="ABC123!@#"  required><br><br>
-      <button type="submit" enable>Submit</button> </div></form>
-</body>
+      <button type="submit" onclick="signUp()" enable>Submit</button> </div></form>
+      <script>
+      const form = document.getElementById('myForm');
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault(); // Prevent default form submission
+      
+        const firstName = document.getElementById('firstname').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const password = document.getElementById('password').value.trim();
+        const confirmPassword = document.getElementById('confirmpassword').value.trim();
+      
+        let isValid = true;
+        let errorMessage = '';
+      
+        // Validate full name (optional):
+        if (firstName === '') {
+          isValid = false;
+          errorMessage += 'Please enter your full name.\n';
+        }
+      
+        // Email validation:
+        const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if (!emailRegex.test(email)) {
+          isValid = false;
+          errorMessage += 'Please enter a valid email address.\n';
+        }
+      
+        // Password validation (minimum length and complexity):
+        const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^\w\s]).{8,}$/;
+        if (!passwordRegex.test(password)) {
+          isValid = false;
+          errorMessage += 'Password must be at least 8 characters long and include a lowercase letter, an uppercase letter, a number, and a special character.\n';
+        }
+      
+        // Confirm password match:
+        if (password !== confirmPassword) {
+          isValid = false;
+          errorMessage += 'Passwords do not match.\n';
+        }
+      
+        if (!isValid) {
+          alert(errorMessage);
+          return; // Prevent further form processing if validation fails
+        }
+      
+        // Form submission (assuming you have a server-side script to handle the data):
+        // ... Send data to server using fetch, XMLHttpRequest, etc. ...
+      
+        console.log('Form submitted successfully!'); // For testing purposes
+      });
+      function signUp() {
+  // Your action here (e.g., alert, console log)
+  alert('Submitted!');
+}
+      </script>
 </body>
 <hr>
 <footer>
