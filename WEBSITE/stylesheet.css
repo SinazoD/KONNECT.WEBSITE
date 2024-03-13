@@ -57,8 +57,8 @@ nav ul li a:hover::after{
     width: 100%;
     justify-content: space-between;
 }
-.about { 
-    background-image: url("lightrainbowbg.png");
+.home { 
+    background-image: url("blue\ logo\ bg.png");
     background-size: cover;
 }
 .header-text{
@@ -428,7 +428,7 @@ input:focus {
 }
 /* FLEXBOX CODE*/
 
-/* .flex-container {
+.flex-container {
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -441,9 +441,9 @@ input:focus {
 }
 
 .flex-item {
-  flex:33.33%;
-  max-width: 33.33%;
-  /* max-height: 25vh;} */
+  flex:100%;
+  max-width: 100%;
+  }
 
 
 
@@ -460,6 +460,7 @@ input:focus {
 }
 
 .flex-item-2items {
+  display: flex;
   flex:50%;
   max-width: 50%;
   margin-top: 5vh;
@@ -551,3 +552,6 @@ input:focus {
   margin-top: auto;
   margin-bottom: auto;
 }
+
+#hometext {background-color: #ccc; color:#080808; opacity:0.8; padding: 20px; border-radius: 15px;}
+
