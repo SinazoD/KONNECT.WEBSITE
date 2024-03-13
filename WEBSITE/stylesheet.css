@@ -63,13 +63,11 @@ nav ul li a:hover::after{
 }
 .header-text{
     margin-top: 20%;
-    font-size: 30px;
     margin-bottom: 15%;
     color: rgb(0, 0, 0);
 }
-.header-text h1{
-    font-size: 60px;
-    margin-top: 20px;
+.header-text{
+    font-size: 10px;
     color: white;
 }
 
@@ -96,11 +94,6 @@ nav ul li a:hover::after{
 
 .left, .right {
     width:25%;
-    padding:20px;
-}
-
-.middle {
-    width:50%;
 }
 /*-------about-------*/
 #about{
@@ -185,7 +178,7 @@ nav ul li a:hover::after{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(2, 2, 2, 0.5); /* Adjust opacity as needed */
+    background-color: rgba(2, 2, 2, 0.9); /* Adjust opacity as needed */
     color: #ffffff;
     text-align: center;
     opacity: 0;
@@ -215,7 +208,7 @@ nav ul li a:hover::after{
     display: flex;
     align-items: center;
     height: 36px;
-    padding: 0px;
+    margin: 5px 0px 5px 10px;
     color: #080808;
   }
   
@@ -251,7 +244,7 @@ nav ul li a:hover::after{
     text-align: center;
     padding: 20px 0;
     width: 100%;
-    position: fixed; /* Stick the footer to the bottom */
+    /* position: fixed; Stick the footer to the bottom */
     bottom: 0;
     z-index: 100; /* Optional: Adjust the stacking order if needed */
 }
@@ -473,6 +466,7 @@ input:focus {
   margin-bottom: 5vh;
 }
 
+
 .flex-container-3items {
   display:flex;
   flex-direction: row;
@@ -496,4 +490,64 @@ input:focus {
 .vertical-center {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+/*Navigation hamburger*/
+
+.topnav {
+  overflow: hidden;
+  background-color: #031825;
+  position: relative;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #127db4;
+  color: white;
+}
+
+.flex-container-nav {
+  display:flex;
+  flex-direction: row;
+}
+
+@media (max-width: 800px) {
+  .flex-container-nav {
+    max-width: 100%;
+    flex-direction: column;
+  }
+}
+
+.flex-item-nav {
+  flex:50%;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
 }
