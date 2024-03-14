@@ -460,9 +460,7 @@ input:focus {
 }
 
 .flex-item-2items {
-  display: flex;
   flex:50%;
-  max-width: 50%;
   margin-top: 5vh;
   margin-bottom: 5vh;
 }
@@ -483,7 +481,6 @@ input:focus {
 
 .flex-item-3items {
   flex:33.33%;
-  max-width: 33.33%;
   margin-top: 5vh;
   margin-bottom: 5vh;
 }
