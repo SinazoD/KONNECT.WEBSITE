@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 
+
 body{
     background: #031825;
     color: #fff;
@@ -172,6 +173,10 @@ nav ul li a:hover::after{
     margin-right: auto;
   }
 
+.about-page-text {
+  margin-right: 55%;
+}
+
   .overlay {
     position: absolute;
     top: 0;
@@ -189,6 +194,8 @@ nav ul li a:hover::after{
     color: white;
     text-align: center;
   }
+
+.overlay a h3 {margin:20%}
   
   .image-container:hover .overlay {
     opacity: 1;
@@ -253,10 +260,7 @@ nav ul li a:hover::after{
     background-image: url("aboutbg.png");
     background-size: cover;
     color: #031825;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    padding-left: 7rem;
-    padding-right: 7rem;
+    padding: 30px;
 }
 
 .about-image {
@@ -438,6 +442,9 @@ input:focus {
   .flex-container {
     max-width: 100%;
   }
+  .about-page-text {
+    margin-right: 10px;};  
+  
 }
 
 .flex-item {
