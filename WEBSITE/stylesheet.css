@@ -59,7 +59,7 @@ nav ul li a:hover::after{
     justify-content: space-between;
 }
 .home { 
-    background-image: url("blue\ logo\ bg.png");
+    background-image: url("images/aboutbg.png");
     background-size: cover;
 }
 .header-text{
@@ -257,7 +257,7 @@ nav ul li a:hover::after{
 }
 
 #about-us { 
-    background-image: url("aboutbg.png");
+    background-image: url("images/aboutbg.png");
     background-size: cover;
     color: #031825;
     padding: 30px;
@@ -345,7 +345,7 @@ nav ul li a:hover::after{
   transition: opacity 0.3s;
 }
 .events { 
-  background-image: url("bc1.png");
+  background-image: url("images/aboutbg.png");
   background-size: cover;
 }
 
@@ -421,7 +421,7 @@ input:focus {
 }
 
 .Groups { 
-  background-image: url("6.png");
+  background-image: url("images/aboutbg.png");
   background-size: cover;
   padding-bottom: 100px;
   color: #080808;
