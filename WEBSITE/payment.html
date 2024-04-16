@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+    body{
+      background-color: rgb(243, 240, 240);
+    }
+    .container {
+      display: flex;
+      align-items: center;
+    }
+
+   
+    .label {
+      margin-right: 10px;
+    }
+
+    .dropdown {
+      width: 200px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+      color: #333;
+      font-size: 16px;
+    }
+
+   
+    .dropdown option {
+      padding: 10px;
+    }
+    .center-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh; 
+            }
+            
+            .cont {
+            width: 90%; 
+            max-width: 400px; 
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            border-color: #007bff;
+        }
+            .type {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+   
+    input {
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 300px;
+    }
+    .text {
+      display: flex;
+      flex-direction: row; 
+      align-items: center;
+      
+    }
+    input{
+        margin-right: 10px;
+    }
+    .button {
+      display: block;
+      margin: 0 auto; 
+      padding: 10px 20px;
+      border: 1px solid #007bff;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+    
+
+
+@media only screen and (min-width: 768px) {
+    .cont {
+        width: 35%; 
+        margin-right: 5%;
+    }
+}
+
+    
+  </style>
+</head>
+<body>
+    <div class="center-wrapper">
+        <div class="cont">
+ 
+  <div class="container">
+    
+    <label for="payment" class="label">Choose Payment:</label>
+   
+    <select id="payment" class="dropdown">
+      <option value="monthly">Monthly - R300</option>
+      <option value="yearly">Yearly - R4000</option>
+    </select>
+  </div>
+  <br>
+  <br>
+ 
+<div class="type">
+  <input type="text" id="cardNumber" placeholder="Card Number" required><br>
+  <input type="text" id="name" placeholder="Name" required>
+</div>
+    <br>
+    <div class="text">
+      <input type="month" id="expiryDate" name="expiryDate" min="2022-01" max="2030-12" required>
+      <input type="text" id="cvc" placeholder="CVC" required>
+  </div>
+     <br>
+     <br>
+     <button class="button" id="paypalButton"><i class="fas fa-money-check"> Pay</i></button>
+
+    
+</div>
+  </div>
+  
+<script>
+  document.getElementById("paypalButton").addEventListener("click", function() {
+    var cardNumber = document.getElementById("cardNumber").value.replace(/\s/g, '');
+    var cvc = document.getElementById("cvc").value;
+    var name = document.getElementById("name").value;
+    var expiryDate = document.getElementById("expiryDate").value;
+
+    
+    if (cardNumber.length !== 16) {
+        alert("Invalid card number. Card number must be 16 digits.");
+        return; 
+    }
+
+    
+    if (cvc.length !== 3) {
+        alert("Invalid CVC. CVC must be 3 digits.");
+        return; 
+    }
+
+   
+  if (name.trim() === "") {
+      alert("Please enter your name.");
+      return; 
+  }
+ 
+  if (expiryDate === "") {
+      alert("Please select expiry date.");
+      return; 
+  }
+    
+    alert("Payment successful!");
+    
+});
+
+document.getElementById("paypalButton").addEventListener("click", function() {
+    var cardNumber = document.getElementById("cardNumber").value.replace(/\s/g, '');
+    var cvc = document.getElementById("cvc").value;
+    var name = document.getElementById("name").value;
+    var expiryDate = document.getElementById("expiryDate").value;
+    
+
+  
+    var isCardNumberValid = cardNumber.length === 16;
+
+    
+    var isCvcValid = cvc.length === 3;
+    
+     if (!isCardNumberValid && !isCvcValid) {
+        alert("Invalid card number and CVC. Card number must be 16 digits and CVC must be 3 digits.");
+        return;
+
+    }
+});
+
+</script>
+</body>
+</html>

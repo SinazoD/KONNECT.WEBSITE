@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Payment</title>
+              <style>
+                 body {
+                  font-family: Arial, sans-serif;
+                  background-color: #f1f1f1;
+                   }
+
+              .center-wrapper {
+                     display: flex;
+                     justify-content: center;
+                     align-items: center;
+                    height: 100vh; 
+               }
+
+
+            .container,
+            .container_2,.container_3 {
+                    width: 17%;
+                    float: left;
+                    margin-right: 5%;
+                    border: 1px solid #ccc;
+                    padding: 20px;
+                    box-sizing: border-box;
+                    border-radius: 10px;
+                    height: 355px;
+                    justify-content: center;
+                   border-color: #007bff;
+                 }
+
+          .container_2 {
+                  margin-right: 0; 
+                 }
+
+           h2 {
+               text-align: center;
+           }
+         .button {
+                display: inline-block;
+                padding: 10px 20px;
+                border: 1px solid #007bff;
+                border-radius: 5px;
+               background-color: #007bff;
+               color: white;
+                text-decoration: none;
+             }
+
+     .button:hover {
+      background-color: #0056b3;
+       }
+
+      #centered-p {
+            text-align: center;
+      }
+
+       hr {
+             height: 1px;
+            border: none;
+           background-color: black;
+           margin: 10px auto;
+          width: 50%;
+        }
+
+     #pay ul {
+           list-style: none;
+        }
+
+      #pay li::before {
+            content: '\2714';
+            color: #007bff;
+            display: inline-block;
+            width: 1em;
+           margin-left: -1em;
+           }
+
+     @media only screen and (max-width: 768px) {
+         .container,
+          .container_2,.container_3 {
+                width: 45%; 
+               margin-right:1; 
+          }
+       }
+    </style>
+</head>
+<body>
+    <div class="center-wrapper">
+      <div class="container_3">
+        <h2>Free</h2>
+   
+          
+   <hr>
+   <br>
+   <div id="pay">
+     <ul>
+       <li>Access to the community​.</li>
+      
+     </ul>
+     <br>
+     <br>
+     <br>
+     <br>
+     <a href=".html" id="freeStartButton" class="button">Start</a>
+
+   </div>
+  </div>
+ 
+ <div class="clearfix"></div>
+    <div class="container">
+         <h2>Basic</h2>
+    
+           <p id="centered-p">R300p/m</p>
+    <hr>
+    <div id="pay">
+      <ul>
+        <li>Group Event Discovery.​</li>
+        <br>
+        <li> ?</li>
+        <br>
+        <li> ?</li>
+      </ul>
+      <br>
+      <br>
+      <a href="card.html" class="button" id="basicStartButton">Start</a>
+
+    </div>
+   </div>
+  <div class="container_2">
+    <h2>Pro</h2>
+    
+    <p id="centered-p">R500p/m</p>
+    <hr>
+    <div id="pay">
+      <ul>
+        <li> Unlimited events​.</li><br>
+        <li> Increased Event Frequency.</li><br>
+        <li>Dynamic Event Listings.</li>
+        
+      </ul>
+      <br>
+      <br>
+      <a href="card.html" id="proStartButton" class="button">Start</a>
+    </div>
+   
+  </div>
+  <div class="clearfix"></div>
+  </div>
+  <script>
+      document.getElementById("freeStartButton").addEventListener("click", function() {
+     
+     alert("Free Start button clicked!");
+    
+   });
+     document.getElementById("basicStartButton").addEventListener("click", function() {
+     
+      alert("Make the Basic payment!");
+     
+    });
+
+    document.getElementById("proStartButton").addEventListener("click", function() {
+     
+      alert("Make the Pro payment!");
+      
+    });
+    </script>
+    
+</body>
+</html>

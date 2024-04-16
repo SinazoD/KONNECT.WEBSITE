@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment</title>
+  <style>
+      body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+}
+.container{
+    width: 50%;
+    float: left;
+    margin-right: 5%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 350px; 
+    border-color: #007bff;
+}
+
+
+
+h2 {
+    text-align: center;
+}
+
+button {
+    width: 40%;
+    padding: 10px;
+    margin: 0 auto 6px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#centered-p {
+    text-align: center;
+    
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background-color: black;
+    margin: 10px auto;
+    width: 50%;
+}
+
+#pay ul {
+    list-style: none;
+}
+
+#pay li::before {
+    content: '\2714';
+    color: #007bff;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 15%; 
+        margin-right: 5%;
+    }
+}
+
+</style>
+</head>
+<body>
+    <div class="center-wrapper">
+    <div class="container_3">
+         <h2>Free</h2>
+    
+           
+    <hr>
+    <br>
+    <div id="pay">
+      <ul>
+        <li>Access to the community​.</li>
+       
+      </ul>
+      <br>
+      <br>
+      <br>
+      <br>
+      <button type="submit" id="freeStartButton">Start</button>
+
+    </div>
+   </div>
+  
+  <div class="clearfix"></div>
+  </div>
+  <script>
+     document.getElementById("freeStartButton").addEventListener("click", function() {
+     
+      alert("Free Start button clicked!");
+     
+    });
+
+    </script>
+    
+</body>
+</html>

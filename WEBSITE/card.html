@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body{
+                background-color: rgb(235, 233, 233);
+            }
+            .center-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh; 
+            }
+            .cont {
+            width: 90%; 
+            max-width: 400px; 
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            border-color: #007bff;
+        }
+            i,p{
+                color:#007bff;
+            }
+            .box {
+               display: flex; 
+              justify-content: center;
+              align-items: center; 
+              background-color: #007bff;
+              padding: 10px; 
+             width: 250px; 
+             height: 50px; 
+            border-radius: 10px;
+        }
+
+      .box i {
+          margin-right: 20px;
+         font-size: 34px;
+         color: white;
+    }
+    #boxes {
+               display: flex; 
+              justify-content: center;
+              align-items: center; 
+              background-color: white;
+              padding: 10px; 
+             width: 250px; 
+             height: 50px; 
+            border-radius: 10px;
+        }
+
+      #boxes i {
+          margin-right: 20px;
+         font-size: 34px;
+         color: #007bff;
+    }
+   
+    .button {
+      border: none;
+      background: none;
+      margin-right: 10px; 
+      cursor: pointer;
+    }
+
+    .button i {
+      font-size: 36px; 
+      color: white; 
+    }
+
+@media only screen and (min-width: 768px) {
+    .cont {
+        width: 35%;
+        margin-right: 5%;
+    }
+}
+a{
+    colo:blue;
+}
+            
+        </style>
+    </head>
+    <body>
+        <div class="center-wrapper">
+        <div class="cont">
+           <h3>Select payment method</h3><br>
+           <i class="fa fa-credit-card" style="font-size:15px"> Your credit cards</i>
+           <br>
+           <br>
+           <p> Other payment methods</p>
+           <br>
+           <br>
+           <div class="box">
+            <a href="payment.html" class="button" id="visaButton"><i class="fa fa-cc-visa"></i></a>
+            <a href="payment.html" class="button" id="mastercardButton"><i class="fa fa-cc-mastercard"></i></a>
+            <a href="payment.html" class="button"  id="amexButton"><i class="fa fa-cc-amex"></i></a>
+        </div>
+          <br>
+          <br>
+          <div id="boxes">
+            <a href="payPal.html" class="button" id="paypalButton"><i class="fa fa-paypal"> PayPal</i></a>
+
+
+          </div>
+            
+       </div>
+     
+      </div>
+      
+  <script>
+ 
+    document.getElementById("visaButton").addEventListener("click", function() {
+      alert("Visa button clicked!");
+      
+    });
+
+   
+    document.getElementById("mastercardButton").addEventListener("click", function() {
+      alert("Mastercard button clicked!");
+      
+    });
+
+    
+    document.getElementById("amexButton").addEventListener("click", function() {
+      alert("Amex button clicked!");
+     
+    });
+     
+       document.getElementById("paypalButton").addEventListener("click", function() {
+      alert("PayPal button clicked!");
+    
+    });
+  </script>
+    </body>
+</html>
