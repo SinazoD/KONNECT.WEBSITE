@@ -557,5 +557,65 @@ input:focus {
   margin-bottom: auto;
 }
 
-#hometext {background-color: #ccc; color:#080808; opacity:0.8; padding: 20px; border-radius: 15px;}
+#hometext {
+  background-color: #ccc; 
+  color:#080808; 
+  opacity:0.8; 
+  padding: 20px; 
+  border-radius: 15px;}
 
+.searchbox {
+  width: 600px;
+  margin: 200px auto 0;
+  border-radius: 5px;
+}
+
+.searchrow {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+#inputbox {
+  flex: 1;
+  height: 50px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+button .fa-solid {
+  width: 25px;
+  color: #555;
+  font-size:22px;
+  cursor: pointer;
+}
+
+.resultbox ul {
+  padding: 15px 10px;
+}
+
+.resultbox ul li {
+  list-style: none;
+  border-radius: 3px;
+  padding: 15px 10px;
+  cursor:pointer;
+  color: #080808;
+}
+
+.resultbox ul li:hover {
+  background-color: #00a2d4;
+}
+
+.resultbox {
+  max-height: 300px;
+  overflow-y: scroll;
+}
